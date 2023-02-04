@@ -19,7 +19,7 @@ function setModeInURL(modeValue: string) {
 
 const mode = ref<'home' | 'edit' | 'view'>(getModeFromURL())
 
-window.addEventListener('popstate', (e) => {
+window.addEventListener('popstate', () => {
 	mode.value = getModeFromURL()
 })
 
