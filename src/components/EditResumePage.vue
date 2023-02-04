@@ -32,54 +32,76 @@ defineProps<{ msg: string }>()
 				</button>
 			</div>
 
-			<div class="justify-between flex my-5">
-				<div class="flex flex-col">
-					<div
-						class="flex justify-center p-5 bg-[#065471] rounded-full shrink self-center"
-					>
-						<img
-							src="../../public/cv-shape.svg"
-							width="60"
-							class="aspect-square"
-						/>
+			<div class="flex content-between">
+				<div class="grow">
+					<div class="">
+						<div>
+							<div class="flex flex-col">
+								<div class="flex bg-[#065471]">
+									<div
+										class="flex justify-center p-5 rounded-full shrink self-center"
+									>
+										<img
+											src="../../public/cv-shape.svg"
+											width="60"
+											class="aspect-square"
+										/>
+									</div>
+									<h3 class="my-5 text-2xl self-center">
+										CV Editor
+									</h3>
+								</div>
+							</div>
+							<div class="h-96 bg-[#0A91AB]/10"></div>
+						</div>
 					</div>
-					<h3 class="my-5 text-2xl self-center">CV Editor</h3>
 				</div>
-				<div class="flex flex-col">
-					<div
-						class="flex justify-center p-5 bg-[#065471] rounded-full shrink self-center"
-					>
-						<img
-							src="../../public/bot-shape.svg"
-							width="60"
-							class="aspect-square"
-						/>
+				<div class="grow px-5 flex flex-col">
+					<div class="">
+						<div>
+							<div class="flex flex-col">
+								<div class="flex bg-[#065471]">
+									<div
+										class="flex justify-center p-5 rounded-full shrink self-center"
+									>
+										<img
+											src="../../public/bot-shape.svg"
+											width="60"
+											class="aspect-square"
+										/>
+									</div>
+									<h3 class="my-5 text-2xl self-center">
+										Bot tips
+									</h3>
+								</div>
+							</div>
+							<!-- BOT -->
+							<div class="h-32 bg-[#0A91AB]/10"></div>
+						</div>
 					</div>
-					<h3 class="my-5 text-2xl self-center">Bot tips</h3>
-				</div>
-				<div class="flex flex-col">
-					<div
-						class="flex justify-center p-5 bg-[#065471] rounded-full shrink self-center"
-					>
-						<img
-							src="../../public/ai-shape.svg"
-							width="60"
-							class="aspect-square"
-						/>
+
+					<div class="mt-5">
+						<div>
+							<div class="flex flex-col">
+								<div class="flex bg-[#065471]">
+									<div
+										class="flex justify-center p-5 rounded-full shrink self-center"
+									>
+										<img
+											src="../../public/ai-shape.svg"
+											width="60"
+											class="aspect-square"
+										/>
+									</div>
+									<h3 class="my-5 text-2xl self-center">
+										Typo finder
+									</h3>
+								</div>
+							</div>
+							<!-- TYPOS -->
+							<div class="h-32 bg-[#0A91AB]/10"></div>
+						</div>
 					</div>
-					<h3 class="my-5 text-2xl self-center">Typo finder</h3>
-				</div>
-				<div class="flex flex-col">
-					<div
-						class="flex justify-center p-5 bg-[#065471] rounded-full shrink self-center"
-					>
-						<img
-							src="../../public/pencil-shape.svg"
-							width="60"
-							class="aspect-square"
-						/>
-					</div>
-					<h3 class="my-5 text-2xl self-center">Save on edit</h3>
 				</div>
 			</div>
 		</div>
