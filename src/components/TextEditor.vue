@@ -56,7 +56,7 @@ onMounted(() => {
 <template>
 	<div id="editorContainer" class="h-full w-full text-black bg-white pb-11">
 		<!-- Create the editor container -->
-		<div id="editor">
+		<div id="editor" class="bg-white">
 			<p class="ql-align-center">
 				email@example.com · (52) 123 45 67 89 ·
 				<a href="yourwebsite.dev">yourwebsite.dev</a> ·

@@ -29,7 +29,7 @@ defineProps<{ msg: string }>()
 
 			<hr class="border-[#FFC045] border-2 brightness-125 mb-10" />
 
-			<div class="justify-between flex my-5">
+			<div class="justify-between flex my-2">
 				<div class="flex flex-col">
 					<div
 						class="flex justify-center p-5 bg-[#065471] rounded-full shrink self-center"

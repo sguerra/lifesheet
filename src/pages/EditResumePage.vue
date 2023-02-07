@@ -35,20 +35,20 @@ defineProps<{ msg: string }>()
 			</button>
 		</div>
 		<div class="flex grow mt-24 h-5/6">
-			<div class="grow h-full m-0 p-0">
+			<div class="grow h-full m-0 p-0 max-h-">
 				<BoxPanel
 					title="CV Editor"
 					img="../../public/cv-shape.svg"
-					class-name="flex flex-col m-0 h-5/6"
+					class-name="grow flex flex-col h-5/6"
 				>
 					<TextEditor />
 				</BoxPanel>
 			</div>
-			<div class="grow px-5 flex flex-col w-96 h-full py-0 m-0">
+			<div class="grow px-5 flex flex-col w-96 h-full">
 				<BoxPanel
 					title="Bot tips"
 					img="../../public/bot-shape.svg"
-					class-name="flex flex-col m-0 h-5/6"
+					class-name="flex flex-col h-5/6"
 				>
 					<BotTips />
 				</BoxPanel>

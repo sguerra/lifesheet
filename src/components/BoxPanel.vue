@@ -9,9 +9,9 @@ defineProps<{ title: string; img: string; className: string }>()
 				<div
 					class="flex justify-center p-5 rounded-full shrink self-center"
 				>
-					<img :src="img" width="30" class="aspect-square" />
+					<img :src="img" width="26" class="aspect-square" />
 				</div>
-				<h3 class="my-5 text-xl self-center">
+				<h3 class="my-2 text-xl self-center">
 					{{ title }}
 				</h3>
 			</div>
