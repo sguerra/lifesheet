@@ -42,7 +42,7 @@ function onView() {
 		<EditResumePage msg="Lifesheet" @onBack="onBack" @onView="onView" />
 	</div>
 	<div class="h-full w-full" v-if="mode === 'view'">
-		<ViewResumePage />
+		<ViewResumePage @onBack="onBack" />
 	</div>
 </template>
 

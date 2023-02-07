@@ -9,16 +9,16 @@ defineProps<{ msg: string }>()
 <template>
 	<div class="flex flex-col h-full relative">
 		<div class="fixed top-0 left-10 right-10 flex">
-			<div class="flex mt-5 pr-10">
+			<div class="flex mt-4 pr-5">
 				<div
 					class="w-9 h-9 rounded-full bg-cover bg-[url('./public/leaf-shape.svg')]"
 				></div>
 			</div>
 			<h1 class="text-2xl mt-5 pr-20">Lifesheet</h1>
-			<h2 class="text-xl mt-5">
+			<h2 class="text-xl mt-6">
 				<span class="text-[#0A91AB] brightness-125">
-					tu hoja de vida, </span
-				><span class="text-[#FFC045] brightness-105">fácil</span>
+					tu hoja de vida </span
+				><span class="text-[#FFC045] brightness-105">asistida</span>
 			</h2>
 
 			<button
@@ -34,29 +34,23 @@ defineProps<{ msg: string }>()
 				Preview
 			</button>
 		</div>
-		<div class="flex grow mt-14">
-			<div class="grow">
+		<div class="flex grow mt-24 h-5/6">
+			<div class="grow h-full m-0 p-0">
 				<BoxPanel
 					title="CV Editor"
 					img="../../public/cv-shape.svg"
-					class-name="flex flex-col h-full"
+					class-name="flex flex-col m-0 h-5/6"
 				>
 					<TextEditor />
 				</BoxPanel>
 			</div>
-			<div class="grow px-5 flex flex-col">
+			<div class="grow px-5 flex flex-col w-96 h-full py-0 m-0">
 				<BoxPanel
 					title="Bot tips"
 					img="../../public/bot-shape.svg"
-					class-name="flex flex-col  h-full"
+					class-name="flex flex-col m-0 h-5/6"
 				>
 					<BotTips />
-				</BoxPanel>
-				<BoxPanel
-					title="Typo finder"
-					img="../../public/ai-shape.svg"
-					class-name="flex flex-col mt-5  h-full"
-				>
 				</BoxPanel>
 			</div>
 		</div>

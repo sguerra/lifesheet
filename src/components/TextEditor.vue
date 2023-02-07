@@ -18,12 +18,12 @@ function setContentsInURL(contentsValue: string) {
 
 onMounted(() => {
 	const toolbarOptions = [
-		['bold', 'italic', 'underline', 'strike'], // toggled buttons
-		[{ list: 'ordered' }, { list: 'bullet' }],
 		[{ header: [1, 2, 3, 4, 5, 6, false] }],
 		[{ font: [] }],
 		[{ align: [] }],
+		['bold', 'italic', 'underline', 'strike'], // toggled buttons
 		['clean'], // remove formatting button
+		[{ list: 'ordered' }, { list: 'bullet' }],
 	]
 
 	const editor = new Quill('#editor', {
@@ -32,6 +32,7 @@ onMounted(() => {
 		},
 		theme: readOnly ? 'bubble' : 'snow',
 		readOnly: readOnly,
+		scrollingContainer: '#editorContainer',
 	})
 
 	//
@@ -53,7 +54,7 @@ onMounted(() => {
 </script>
 
 <template>
-	<div class="h-full w-full text-black bg-white pb-11">
+	<div id="editorContainer" class="h-full w-full text-black bg-white pb-11">
 		<!-- Create the editor container -->
 		<div id="editor">
 			<p class="ql-align-center">

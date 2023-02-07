@@ -35,7 +35,7 @@ async function getTip() {
 		},
 		body: `{
                 "model": "command-medium-nightly",
-                "prompt": "Give me a tip on ${section} section of a resume",
+                "prompt": "Give me a short tip on '${section}' section of a resume",
                 "max_tokens": 332,
                 "temperature": 0.9,
                 "k": 0,

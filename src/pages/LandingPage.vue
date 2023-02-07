@@ -22,8 +22,8 @@ defineProps<{ msg: string }>()
 				<h1 class="text-6xl my-5">Lifesheet</h1>
 				<h2 class="text-4xl my-5">
 					<span class="text-[#0A91AB] brightness-125">
-						tu hoja de vida, </span
-					><span class="text-[#FFC045] brightness-105">fácil</span>
+						tu hoja de vida </span
+					><span class="text-[#FFC045] brightness-105">asistida</span>
 				</h2>
 			</div>
 
@@ -64,7 +64,7 @@ defineProps<{ msg: string }>()
 							class="aspect-square"
 						/>
 					</div>
-					<h3 class="my-5 text-2xl self-center">Typo finder</h3>
+					<h3 class="my-5 text-2xl self-center">Typo highlight</h3>
 				</div>
 				<div class="flex flex-col">
 					<div
@@ -81,7 +81,7 @@ defineProps<{ msg: string }>()
 			</div>
 			<div class="flex justify-center">
 				<button
-					class="bg-[#0A91AB]/50 text-white border-white border-4 hover:bg-[#FFC045] hover:text-[#065471] hover:border-[#065471] hover:brightness-110 w-96 py-5 px-10 text-2xl font-bold my-5"
+					class="bg-[#0A91AB]/50 text-white border-white border-4 hover:bg-[#FFC045] hover:text-[#065471] hover:border-[#065471] hover:brightness-110 w-96 py-3 px-5 text-2xl font-bold my-5"
 					@click="$emit('onStart')"
 				>
 					Start
