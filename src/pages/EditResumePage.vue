@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import BoxPanel from '../components/BoxPanel.vue'
 import TextEditor from '../components/TextEditor.vue'
+import BotTips from '../components/BotTips.vue'
 
 defineProps<{ msg: string }>()
 </script>
@@ -49,6 +50,7 @@ defineProps<{ msg: string }>()
 					img="../../public/bot-shape.svg"
 					class-name="flex flex-col  h-full"
 				>
+					<BotTips />
 				</BoxPanel>
 				<BoxPanel
 					title="Typo finder"
