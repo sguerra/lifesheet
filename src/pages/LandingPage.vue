@@ -3,7 +3,7 @@ defineProps<{ msg: string }>()
 </script>
 
 <template>
-	<div>
+	<div class="flex flex-col h-full py-10">
 		<video
 			autoplay
 			muted
@@ -12,7 +12,7 @@ defineProps<{ msg: string }>()
 		>
 			<source src="../../public/typing-video.mp4" type="video/mp4" />
 		</video>
-		<div>
+		<div class="flex flex-col grow justify-between">
 			<div class="justify-between flex flex-col">
 				<div class="flex justify-center my-5">
 					<div
@@ -79,13 +79,14 @@ defineProps<{ msg: string }>()
 					<h3 class="my-5 text-2xl self-center">Save on edit</h3>
 				</div>
 			</div>
-
-			<button
-				class="bg-[#0A91AB]/50 text-white border-white border-4 hover:bg-[#FFC045] hover:text-[#065471] hover:border-[#065471] hover:brightness-110 w-96 py-5 px-10 text-2xl font-bold my-5"
-				@click="$emit('onStart')"
-			>
-				Start
-			</button>
+			<div class="flex justify-center">
+				<button
+					class="bg-[#0A91AB]/50 text-white border-white border-4 hover:bg-[#FFC045] hover:text-[#065471] hover:border-[#065471] hover:brightness-110 w-96 py-5 px-10 text-2xl font-bold my-5"
+					@click="$emit('onStart')"
+				>
+					Start
+				</button>
+			</div>
 		</div>
 	</div>
 </template>

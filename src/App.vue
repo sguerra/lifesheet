@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import { ref } from 'vue'
-import LandingPage from './components/LandingPage.vue'
-import EditResumePage from './components/EditResumePage.vue'
-import ViewResumePage from './components/ViewResumePage.vue'
+import LandingPage from './pages/LandingPage.vue'
+import EditResumePage from './pages/EditResumePage.vue'
+import ViewResumePage from './pages/ViewResumePage.vue'
 
 function getModeFromURL() {
 	const url = new URL(window.location.href)
@@ -35,13 +35,13 @@ function onView() {
 </script>
 
 <template>
-	<div v-if="mode === 'home'">
+	<div class="h-full w-full" v-if="mode === 'home'">
 		<LandingPage msg="Lifesheet" @onStart="onStart" />
 	</div>
-	<div v-if="mode === 'edit'">
+	<div class="h-full w-full" v-if="mode === 'edit'">
 		<EditResumePage msg="Lifesheet" @onBack="onBack" @onView="onView" />
 	</div>
-	<div v-if="mode === 'view'">
+	<div class="h-full w-full" v-if="mode === 'view'">
 		<ViewResumePage />
 	</div>
 </template>
