@@ -1,5 +1,7 @@
 <script setup lang="ts">
 import BoxPanel from '../components/BoxPanel.vue'
+import TextEditor from '../components/TextEditor.vue'
+
 defineProps<{ msg: string }>()
 </script>
 
@@ -31,13 +33,14 @@ defineProps<{ msg: string }>()
 				Preview
 			</button>
 		</div>
-		<div class="flex grow mt-20">
+		<div class="flex grow mt-14">
 			<div class="grow">
 				<BoxPanel
 					title="CV Editor"
 					img="../../public/cv-shape.svg"
 					class-name="flex flex-col h-full"
 				>
+					<TextEditor />
 				</BoxPanel>
 			</div>
 			<div class="grow px-5 flex flex-col">
